@@ -6,11 +6,11 @@ Bu proje, Docker ve Kubernetes kullanılarak oluşturulmuş mikroservis mimarisi
 
 Proje, birbirinden izole çalışan 5 farklı bileşenden oluşmaktadır:
 
-**1. Vote App (Frontend):** Kullanıcıların oylarını kullandığı web arayüzüdür. Gelen oyları hızlıca Redis kuyruğuna iletir.
-**2. Redis (Queue):** Oyların geçici olarak biriktiği ve mesaj kuyruğu görevi gören servistir.
-**3. Worker (Arka Plan Servisi):** Sürekli çalışarak Redis kuyruğundaki oyları sırayla alır ve kalıcı veritabanına yazar.
-**4. PostgreSQL (Database):** Oyların kalıcı olarak saklandığı ilişkisel veritabanıdır.
-**5. Result App (Frontend):** Veritabanındaki güncel oy oranlarını okuyarak anlık sonuçları gösteren web arayüzüdür.
+1. **Vote App (Frontend):** Kullanıcıların oylarını kullandığı web arayüzüdür. Gelen oyları hızlıca Redis kuyruğuna iletir.
+2. **Redis (Queue):** Oyların geçici olarak biriktiği ve mesaj kuyruğu görevi gören servistir.
+3. **Worker (Arka Plan Servisi):** Sürekli çalışarak Redis kuyruğundaki oyları sırayla alır ve kalıcı veritabanına yazar.
+4. **PostgreSQL (Database):** Oyların kalıcı olarak saklandığı ilişkisel veritabanıdır.
+5. **Result App (Frontend):** Veritabanındaki güncel oy oranlarını okuyarak anlık sonuçları gösteren web arayüzüdür.
 
 ## Kullanılan Konteyner İmajları
 
